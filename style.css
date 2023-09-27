@@ -7,6 +7,9 @@ body {
 .center {
   justify-content: center;
 }
+.between {
+  justify-content: space-between;
+}
 .gap {
   gap: 5px;
   font-size: 18px;
@@ -21,6 +24,11 @@ body {
   width: 100vw;
   height: 950px;
   background: linear-gradient(#fff, #ebe9e9);
+}
+
+.wrapper {
+  width: 1100px;
+  margin: auto;
 }
 header {
   justify-content: center;
@@ -117,6 +125,11 @@ button {
 /* story */
 
 .story {
+  margin-top: 40px;
+  flex-direction: column;
+  /* margin-left: 520px; */
+}
+.storyImg {
   gap: 15px;
 }
 .story-title-1 {
@@ -135,4 +148,101 @@ button {
   height: 235px;
   width: 180px;
   object-fit: cover;
+}
+
+/* Calendar */
+
+.calendarMain {
+  gap: 20px;
+  margin-top: 40px;
+}
+.text-8 {
+  margin-top: -28px;
+  color: #407ce8;
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.imgtsetseg {
+  vertical-align: middle;
+  width: 23px;
+}
+.calendarOneDay {
+  width: 103px;
+  height: 9px;
+  cursor: pointer;
+  background-color: #407ce8;
+  border-radius: 20px;
+}
+.calendarText1 {
+  text-align: center;
+  font-size: 13px;
+  color: #407ce8;
+  cursor: pointer;
+}
+.calendarText2 {
+  text-align: center;
+  font-size: 13px;
+  color: #aba8a8;
+  cursor: pointer;
+}
+.calendarOneDay2 {
+  width: 103px;
+  height: 9px;
+  cursor: pointer;
+
+  background-color: #efefef;
+  border-radius: 20px;
+}
+.calendarTseg {
+  background: #efefef;
+  height: 27px;
+  line-height: 18px;
+  width: 27px;
+  border-radius: 5px;
+  text-align: center;
+  border: none !important;
+  transition: all 0.2s ease-in-out;
+}
+
+/* news */
+
+.newsContainer {
+  margin-top: 50px;
+}
+.newsimg {
+  height: 150px;
+  width: 210px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.newTexts {
+  width: 450px;
+  height: 171px;
+  padding-left: 30px;
+}
+.newText1 {
+  font-weight: 700;
+  font-size: 19px;
+}
+.newText2 {
+  height: 40px;
+  overflow: hidden;
+  color: #888;
+}
+
+/* sideContent */
+
+.sideContent {
+  margin-top: 100px;
+}
+.sidetitle {
+  gap: 10px;
+}
+.sideicon {
+  height: 30px;
+}
+.text-9 {
+  text-align: center;
 }
