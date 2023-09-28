@@ -14,11 +14,20 @@ body {
   gap: 5px;
   font-size: 18px;
 }
+.gap15 {
+  gap: 15px;
+}
 .border {
   border-radius: 5px;
 }
 .font-bold {
   font-weight: 700;
+}
+.cursor {
+  cursor: pointer;
+}
+.textdec {
+  text-decoration: none;
 }
 .container {
   width: 100vw;
@@ -150,7 +159,7 @@ button {
   object-fit: cover;
 }
 
-/* Calendar */
+/* Main content */
 
 .calendarMain {
   gap: 20px;
@@ -162,7 +171,6 @@ button {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 16px;
-  cursor: pointer;
 }
 .imgtsetseg {
   vertical-align: middle;
@@ -171,7 +179,7 @@ button {
 .calendarOneDay {
   width: 103px;
   height: 9px;
-  cursor: pointer;
+
   background-color: #407ce8;
   border-radius: 20px;
 }
@@ -179,19 +187,15 @@ button {
   text-align: center;
   font-size: 13px;
   color: #407ce8;
-  cursor: pointer;
 }
 .calendarText2 {
   text-align: center;
   font-size: 13px;
   color: #aba8a8;
-  cursor: pointer;
 }
 .calendarOneDay2 {
   width: 103px;
   height: 9px;
-  cursor: pointer;
-
   background-color: #efefef;
   border-radius: 20px;
 }
@@ -205,9 +209,6 @@ button {
   border: none !important;
   transition: all 0.2s ease-in-out;
 }
-
-/* news */
-
 .newsContainer {
   margin-top: 50px;
 }
@@ -231,8 +232,27 @@ button {
   overflow: hidden;
   color: #888;
 }
+.recklam2 {
+  width: 700px;
+}
+.btm-more {
+  background: #f8f8f8;
+  border: 1px solid #f2f2f2;
+  display: block;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #000;
+}
+.btmimg {
+  height: 21px;
+  box-sizing: border-box;
+  width: 17px;
+}
 
-/* sideContent */
+/* side Content */
 
 .sideContent {
   margin-top: 100px;
@@ -243,6 +263,133 @@ button {
 .sideicon {
   height: 30px;
 }
+.trendcontainer {
+  background-color: #fdfaf5;
+  padding: 30px 50px;
+  width: 300px;
+  margin-top: 30px;
+}
 .text-9 {
   text-align: center;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.text10 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.trendnumber {
+  font-weight: 700;
+  color: #e00034;
+  font-size: 46px;
+  line-height: 46px;
+}
+.trend {
+  margin-top: 30px;
+  gap: 30px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.06);
+}
+
+/* After content */
+
+.aftercontent {
+  width: 1100px;
+  margin: auto;
+}
+.talktitlef {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.talktitle {
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+.talkimg {
+  height: 21px;
+  box-sizing: border-box;
+  width: 17px;
+}
+.talk {
+  display: grid;
+  grid-template-areas:
+    "header header menu main"
+    "header header right footer";
+  padding: 10px;
+  gap: 12px;
+}
+.imgafter {
+  grid-area: header;
+}
+.imgafter1 {
+  grid-area: menu;
+}
+.imgafter2 {
+  grid-area: main;
+}
+.imgafter3 {
+  grid-area: right;
+}
+.imgafter4 {
+  grid-area: footer;
+}
+.imgafter {
+  width: 600px;
+  height: 500px;
+  object-fit: cover;
+  object-position: top center;
+}
+.imgafter1 {
+  height: 243px;
+  object-fit: cover;
+  width: 243px;
+}
+.imgafter2 {
+  height: 243px;
+  object-fit: cover;
+  width: 243px;
+}
+.imgafter3 {
+  height: 243px;
+  object-fit: cover;
+  width: 243px;
+}
+.imgafter4 {
+  height: 243px;
+  object-fit: cover;
+  width: 243px;
+}
+
+/* gogo hew mayag */
+
+.aftercontent2 {
+  width: 1100px;
+  margin: auto;
+}
+.afterimg {
+  width: 243px;
+  height: 243px;
+  object-fit: cover;
+  margin-top: 20px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.aftertext {
+  border: 1px solid #f1f1f1;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-top: -5px;
+  padding: 10px;
+  width: 243px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  height: 150px;
+}
+.aftercontent3 {
+  max-width: 1100px;
+  margin: auto;
 }
