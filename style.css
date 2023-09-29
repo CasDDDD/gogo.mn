@@ -250,6 +250,7 @@ button {
   height: 21px;
   box-sizing: border-box;
   width: 17px;
+  align-items: center;
 }
 
 /* side Content */
@@ -259,6 +260,7 @@ button {
 }
 .sidetitle {
   gap: 10px;
+  align-items: center;
 }
 .sideicon {
   height: 30px;
@@ -270,10 +272,10 @@ button {
   margin-top: 30px;
 }
 .text-9 {
-  text-align: center;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
+  align-items: center;
 }
 .text10 {
   font-size: 16px;
@@ -308,9 +310,9 @@ button {
   line-height: 26px;
 }
 .talkimg {
-  height: 21px;
+  height: 31px;
   box-sizing: border-box;
-  width: 17px;
+  width: 27px;
 }
 .talk {
   display: grid;
@@ -369,7 +371,7 @@ button {
   margin: auto;
 }
 .afterimg {
-  width: 243px;
+  width: 270px;
   height: 243px;
   object-fit: cover;
   margin-top: 20px;
@@ -382,14 +384,103 @@ button {
   border-bottom-right-radius: 5px;
   margin-top: -5px;
   padding: 10px;
-  width: 243px;
+  width: 270px;
   box-sizing: border-box;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
   height: 150px;
 }
-.aftercontent3 {
-  max-width: 1100px;
+.comic {
+  width: 1100px;
   margin: auto;
+}
+.comici {
+  width: 555px;
+  height: 220px;
+  object-fit: cover;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.comict {
+  width: 532px;
+  height: 100px;
+  border: 1px solid #f1f1f1;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-top: -5px;
+  padding: 10px;
+}
+.comicicon {
+  width: 30px;
+  height: 31px;
+}
+
+/* Entertainment */
+
+.enter {
+  background-color: #1a1a1a;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.enterimg {
+  height: 175px;
+  width: 269px;
+  object-fit: cover;
+}
+.enter1 {
+  margin-top: 20px;
+}
+.enter2 {
+  margin-top: 40px;
+}
+
+.entert {
+  font-size: 20px;
+  align-items: center;
+  color: white;
+  gap: 10px;
+}
+
+.text-11 {
+  width: 278px;
+  color: #b9b9b9;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* footer */
+
+footer {
+  align-items: center;
+  width: 1100px;
+  margin: auto;
+}
+.footertext {
+  color: #000;
+  font-weight: 500;
+}
+.footericon {
+  width: 20px;
+  height: 20px;
+}
+.footerline {
+  border-color: rgba(0, 0, 0, 0.05);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 0;
+  border-top: 1px solid #e5e5e5;
+  width: 1100px;
+}
+.text-12 {
+  font-size: 14px;
+  width: 1100px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.logo {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  opacity: 0.2;
 }
