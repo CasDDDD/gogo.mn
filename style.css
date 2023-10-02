@@ -29,6 +29,9 @@ body {
 .textdec {
   text-decoration: none;
 }
+.overflow {
+  overflow: hidden;
+}
 .container {
   width: 100vw;
   height: 950px;
@@ -110,6 +113,21 @@ button {
   object-fit: cover;
   border-radius: 5px;
 }
+.hovertext {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  opacity: 1;
+}
+.hovericon {
+  width: 30px;
+}
+.hoverimg {
+  position: relative;
+}
+.hoverimg:hover > img {
+  transform: scale(1.2);
+}
 
 /* cards */
 
@@ -126,6 +144,15 @@ button {
   font-weight: 600;
   width: 285px;
 }
+.text-13 {
+  font-weight: 500;
+  width: 285px;
+}
+.commentt {
+  margin-top: -20px;
+  opacity: 0.5;
+  font-size: 15px;
+}
 .gogo-banner {
   height: 280px;
   max-width: 100%;
@@ -133,13 +160,28 @@ button {
 
 /* story */
 
+.bg-story {
+  position: relative;
+}
+.ontext {
+  color: #fff;
+  overflow: hidden;
+  max-height: 22px;
+  width: 150px;
+  margin-top: 170px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px;
+  left: 0;
+  top: 0;
+}
 .story {
   margin-top: 40px;
   flex-direction: column;
-  /* margin-left: 520px; */
 }
 .storyImg {
   gap: 15px;
+  margin-top: 20px;
 }
 .story-title-1 {
   font-size: 26px;
@@ -153,11 +195,26 @@ button {
   color: #fff;
   font-size: 18px;
 }
+
 .story-img {
-  height: 235px;
-  width: 180px;
+  height: 245px;
+  width: 170px;
   object-fit: cover;
+  border-radius: 5px;
 }
+.posb {
+  position: absolute;
+}
+.posr {
+  position: relative;
+}
+.glogo {
+  width: 30px;
+  padding: 10px;
+  left: 0;
+  top: 0;
+}
+.
 
 /* Main content */
 
