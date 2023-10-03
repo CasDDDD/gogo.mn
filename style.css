@@ -17,6 +17,9 @@ body {
 .gap15 {
   gap: 15px;
 }
+.margintop50 {
+  margin-top: 50px;
+}
 .border {
   border-radius: 5px;
 }
@@ -28,6 +31,9 @@ body {
 }
 .textdec {
   text-decoration: none;
+}
+.zindex-1 {
+  z-index: -1;
 }
 .overflow {
   overflow: hidden;
@@ -114,23 +120,42 @@ button {
   border-radius: 5px;
 }
 .hovertext {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  opacity: 1;
-}
-.hovericon {
-  width: 30px;
-}
-.hoverimg {
-  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 550px;
+  height: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
 .hoverimg:hover > img {
   transform: scale(1.2);
 }
+.hoverimg:hover > .hovertext {
+  opacity: 1;
+}
 
 /* cards */
-
+.cardshover:hover > img {
+  transform: scale(1.2);
+}
+.cardshover:hover > .hovertext1 {
+  opacity: 1;
+}
+.hovertext1 {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 285px;
+  height: 193px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
 .container-card {
   margin-top: 30px;
   gap: 15px;
@@ -143,15 +168,16 @@ button {
 .text-6 {
   font-weight: 600;
   width: 285px;
+  color: #000;
 }
 .text-13 {
   font-weight: 500;
   width: 285px;
 }
 .commentt {
-  margin-top: -20px;
   opacity: 0.5;
   font-size: 15px;
+  color: #000;
 }
 .gogo-banner {
   height: 280px;
@@ -214,7 +240,6 @@ button {
   left: 0;
   top: 0;
 }
-.
 
 /* Main content */
 
@@ -275,6 +300,28 @@ button {
   object-fit: cover;
   border-radius: 5px;
 }
+
+/* cont */
+
+.newsimgs:hover {
+  transform: scale(1.2);
+}
+.newstext1 {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 210px;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  font-size: 15px;
+}
+.newsimgs:hover > .newstext1 {
+  opacity: 1;
+  z-index: 10;
+}
 .newTexts {
   width: 450px;
   height: 171px;
@@ -283,6 +330,7 @@ button {
 .newText1 {
   font-weight: 700;
   font-size: 19px;
+  color: #000;
 }
 .newText2 {
   height: 40px;
@@ -451,6 +499,7 @@ button {
   line-height: 24px;
   font-weight: 700;
   height: 150px;
+  color: #000;
 }
 .comic {
   width: 1100px;
