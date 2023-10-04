@@ -188,6 +188,13 @@ button {
 
 .bg-story {
   position: relative;
+  overflow: hidden;
+}
+.bg-story:hover > img {
+  transform: scale(1.2);
+}
+.bg-story:hover > .ontext {
+  overflow: visible;
 }
 .ontext {
   color: #fff;
@@ -228,8 +235,11 @@ button {
   object-fit: cover;
   border-radius: 5px;
 }
+
 .posb {
   position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .posr {
   position: relative;
@@ -350,6 +360,7 @@ button {
   font-weight: 700;
   font-size: 16px;
   color: #000;
+  margin-top: 30px;
 }
 .btmimg {
   height: 21px;
@@ -360,6 +371,24 @@ button {
 
 /* side Content */
 
+.sidehover:hover > img {
+  transform: scale(1.2);
+}
+.sidehover:hover > .sidehovert {
+  opacity: 1;
+}
+.sidehovert {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 290px;
+  height: 193px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  font-size: 15px;
+}
 .sideContent {
   margin-left: 50px;
   border-left: 1px solid #e5e5e5;
@@ -403,10 +432,51 @@ button {
 }
 
 /* After content */
-
+.gutal {
+  background-color: #407ce8;
+  width: 40px;
+  height: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+.afteron {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
+  width: 500px;
+  align-items: flex-end;
+  padding: 30px;
+}
+.afteron1 {
+  color: #fff;
+  font-weight: 200;
+  font-size: 13px;
+  margin: 0;
+  padding-left: 15px;
+}
+.littletitle1 {
+  width: 70px;
+  height: 20px;
+  background-color: #407ce8;
+  padding: 2px 5px;
+  align-items: center;
+  border-radius: 2px;
+}
+.littlebot {
+  padding-top: 10px;
+  font-weight: 700;
+  border-top: 1px solid hsla(0, 20%, 99%, 0.528);
+  font-size: 10px;
+}
 .aftercontent {
   width: 1100px;
   margin: auto;
+  margin-top: 160px;
 }
 .talktitlef {
   margin-top: 40px;
@@ -528,6 +598,24 @@ button {
 
 /* Entertainment */
 
+.enterhover:hover > img {
+  transform: scale(1.2);
+}
+.enterhover:hover > .enterhovert {
+  opacity: 1;
+}
+.enterhovert {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 290px;
+  height: 193px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  font-size: 15px;
+}
 .enter {
   background-color: #1a1a1a;
   padding-top: 50px;
@@ -593,4 +681,10 @@ footer {
   height: 20px;
   margin-left: 15px;
   opacity: 0.2;
+}
+/* tablet */
+@media screen and(max-width: 960px;) {
+  .container-card {
+    display: block;
+  }
 }
