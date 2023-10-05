@@ -3,20 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>GoGo</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
-    <div class="container">
+    <div class="container cursor">
       <header class="flex">
         <img src="./images/gogo-logo.345096b3.png" class="nav-img" />
-        <nav class="flex">
-          <p>Мэдээ</p>
-          <p>GoGo булан</p>
-          <p>Үзэх</p>
-          <p>Хэв маяг</p>
-          <p>English</p>
+        <nav class="flex textdec">
+          <a class="textdec navtop" href="">Мэдээ</a>
+          <a class="textdec navtop" href="">GoGo булан</a>
+          <a class="textdec navtop" href="">Үзэх</a>
+          <a class="textdec navtop" href="">Хэв маяг</a>
+          <a class="textdec navtop" href="">English</a>
           <div class="nav-link flex">
             <div class="text-1">
               <p>Цаг агаар</p>
@@ -40,6 +40,11 @@
                 3463₮
               </div>
             </div>
+            <img
+              class="burger-menu"
+              src="./icons/burger-menu.6c31a5c9.svg"
+              alt=""
+            />
           </div>
         </nav>
       </header>
@@ -47,7 +52,7 @@
       <!-- section -->
 
       <div class="flex center">
-        <img class="border" src="./images/1170x75.png" alt="" />
+        <img class="border recklamfirst" src="./images/1170x75.png" alt="" />
       </div>
       <section class="flex center">
         <article class="border">
@@ -243,7 +248,7 @@
 
     <!-- section -->
 
-    <div class="story flex wrapper">
+    <div class="story flex wrapper cursor">
       <div class="story-title-1">
         GoGo
         <span class="story-title-2">СТОРИ</span>
@@ -961,15 +966,15 @@
 
     <!-- After content -->
 
-    <div class="aftercontent">
+    <div class="aftercontent cursor">
       <div class="talktitlef">
-        <a href="" class="talktitle cursor textdec"
-          ><img class="talkimg" src="./icons/interview.b47c0f6b.png" alt="" />
-          Ярилцлага</a
-        >
+        <div class="talktitle cursor textdec">
+          <img class="talkimg" src="./icons/interview.b47c0f6b.png" alt="" />
+          Ярилцлага
+        </div>
       </div>
       <div class="talk">
-        <div class="posr imgafter">
+        <div class="posr imgafter overflow imgafterhover">
           <img
             class="border posr"
             style="width: 100%; height: 100%"
@@ -982,10 +987,33 @@
               ГУТАЛ #24:Тэнд автобус очихгүй, таксидвал төлбөр нь “тэнгэрт
               хадна”, тэглээ ч хичээлээ таслахгүй
             </h3>
-            <div class="littlebot">Дэлгэрэнгүй</div>
+            <div class="littlebot flex">
+              Дэлгэрэнгүй
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+                data-svg="arrow-right"
+              >
+                <polyline
+                  fill="none"
+                  stroke="#000"
+                  points="10 5 15 9.5 10 14"
+                ></polyline>
+                <line
+                  fill="none"
+                  stroke="#000"
+                  x1="4"
+                  y1="9.5"
+                  x2="15"
+                  y2="9.5"
+                ></line>
+              </svg>
+            </div>
           </div>
         </div>
-        <div class="posr">
+        <div class="posr imgafterhover overflow">
           <img
             class="imgafter1 border"
             src="./images/309762-18082023-1692338241-579524689-DSC026741.jpeg"
@@ -999,7 +1027,7 @@
             </h3>
           </div>
         </div>
-        <div class="posr">
+        <div class="posr imgafterhover overflow">
           <img
             class="imgafter2 border"
             src="./images/310499-08092023-1694151387-948848906-AE9I6970-Edit1.jpeg"
@@ -1013,7 +1041,7 @@
             </h3>
           </div>
         </div>
-        <div class="posr">
+        <div class="posr imgafterhover overflow">
           <img
             class="imgafter3 border"
             src="./images/310235-31082023-1693470334-772997207-gutal1.png"
@@ -1027,7 +1055,7 @@
             </h3>
           </div>
         </div>
-        <div class="posr">
+        <div class="posr imgafterhover overflow">
           <img
             class="imgafter4 border"
             src="./images/310082-06092023-1693977025-1248201788-andglobal_hosbayar_khosooceo-21.jpeg"
@@ -1048,16 +1076,16 @@
 
     <div class="aftercontent2 cursor">
       <div>
-        <a href="" class="story-title-1 textdec">
+        <div class="story-title-1 textdec">
           GoGo
           <span class="story-title-2">ХЭВ МАЯГ</span>
-        </a>
+        </div>
       </div>
       <div class="flex gap15">
         <div>
-          <a href="">
+          <div class="afterhover overflow">
             <img class="afterimg" src="./images/hewmayg.png" alt="" />
-          </a>
+          </div>
           <div class="aftertext">
             Миний санал болгох ном: "Мэлхий"
             <div class="flex commentt gap15 margintop50">
@@ -1073,9 +1101,8 @@
           </div>
         </div>
         <div>
-          <a href="" class="textdec">
+          <div class="textdec afterhover overflow">
             <img class="afterimg" src="./images/hewmayg2.png" alt="" />
-
             <div class="aftertext">
               Хоолны жор: Дархлаа дэмжих цагаан гаа, лимонтой цай
               <div class="flex commentt gap15 margintop50">
@@ -1089,12 +1116,12 @@
                 </p>
               </div>
             </div>
-          </a>
+          </div>
         </div>
         <div>
-          <a href="">
+          <div class="afterhover overflow">
             <img class="afterimg" src="./images/hewmayg3.png" alt="" />
-          </a>
+          </div>
           <div class="aftertext">
             Хоолны жор: Бөөрөнхий махтай шпагетти
             <div class="flex commentt gap15 margintop50">
@@ -1110,9 +1137,9 @@
           </div>
         </div>
         <div>
-          <a href="">
+          <div class="afterhover overflow">
             <img class="afterimg" src="./images/hewmayg4.png" alt="" />
-          </a>
+          </div>
           <div class="aftertext">
             Хоолны жор: Бөөрөнхий махтай шпагетти
             <div class="flex commentt gap15 margintop50">
@@ -1132,18 +1159,18 @@
 
     <!-- Tech -->
 
-    <div class="aftercontent2">
+    <div class="aftercontent2 cursor">
       <div>
-        <a href="" class="talktitle textdec">
+        <div class="talktitle textdec flex gap15">
           <img class="talkimg" src="./icons/tech.a4b28dbb.png" alt="" />
           Технологи
-        </a>
+        </div>
       </div>
       <div class="flex gap15">
         <div>
-          <a href="">
+          <div class="afterhover overflow">
             <img class="afterimg" src="./images/tech.png" alt="" />
-          </a>
+          </div>
           <div class="aftertext">
             ChatGPT 2021 оноос хойших мэдээллийн сантай боллоо
             <div class="flex commentt gap15 margintop50">
@@ -1159,9 +1186,9 @@
           </div>
         </div>
         <div>
-          <a href="">
+          <div class="afterhover overflow">
             <img class="afterimg" src="./images/tech2.png" alt="" />
-          </a>
+          </div>
           <div class="aftertext">
             ChatGPT 2021 оноос хойших мэдээллийн сантай боллоо
             <div class="flex commentt gap15 margintop50">
@@ -1177,9 +1204,9 @@
           </div>
         </div>
         <div>
-          <a href="">
+          <div class="afterhover overflow">
             <img class="afterimg" src="./images/tech3.png" alt="" />
-          </a>
+          </div>
           <div class="aftertext">
             ChatGPT 2021 оноос хойших мэдээллийн сантай боллоо
             <div class="flex commentt gap15 margintop50">
@@ -1195,9 +1222,9 @@
           </div>
         </div>
         <div>
-          <a href="">
+          <div class="afterhover overflow">
             <img class="afterimg" src="./images/tech4.png" alt="" />
-          </a>
+          </div>
           <div class="aftertext">
             ChatGPT 2021 оноос хойших мэдээллийн сантай боллоо
             <div class="flex commentt gap15 margintop50">
@@ -1217,30 +1244,30 @@
 
     <!-- comic -->
 
-    <div class="comic gap15">
+    <div class="comic gap15 cursor">
       <div>
-        <a href="" class="comictitle textdec talktitle">
+        <div class="comictitle textdec talktitle gap15">
           <img class="comicicon" src="./icons/comic.9afb6d5b.png" alt="" />
-          Комик</a
-        >
+          Комик
+        </div>
       </div>
       <div class="flex gap15">
         <div>
-          <a href="">
+          <div class="afterhover overflow">
             <img
               class="comici"
               src="./images/comic-153411-688093610.jpeg"
               alt=""
             />
-          </a>
+          </div>
           <p class="comict">
             Нэг өрөөнд хамт хэвтсэн энэ хэцүү хүний ДАТА ДУУСААСАЙ
           </p>
         </div>
         <div>
-          <a href="">
+          <div class="afterhover overflow">
             <img class="comici" src="./images/comic2.png" alt="" />
-          </a>
+          </div>
           <p class="comict">
             Хөгжлийн банкны шүүгдэгчдийн хөөрхийлөлтэй мэдүүлгүүд
           </p>
@@ -1259,7 +1286,7 @@
       </div>
       <div class="flex comic gap15 enter1">
         <div class="posr">
-          <div href="" class="textdec entertext enterhover">
+          <div href="" class="textdec entertext enterhover overflow">
             <img class="enterimg border" src="./images/enter1.png" alt="" />
             <div class="enterhovert flex center posb">
               Унших
